@@ -39,8 +39,7 @@ chmod +x get-tilix
 ```
 note: if you're like me and you use lxqt and you want to set it as the default terminal do this
 
-sudo emerge -C qterminal
-sudo ln -s /usr/bin/tilix /usr/bin/qterminal
+sudo emerge -C qterminal && sudo ln -s /usr/bin/tilix /usr/bin/qterminal
 
 ### Option 2: Manual installation (advanced)
 
