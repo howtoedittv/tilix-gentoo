@@ -1,3 +1,4 @@
+sudo chmod +x tilix.desktop
 sudo mkdir -p /usr/share/applications 
 sudo cp tilix.desktop /usr/share/applications/
 sudo mkdir /pic
