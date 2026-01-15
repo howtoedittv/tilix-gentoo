@@ -37,20 +37,7 @@ cd tilix-gentoo
 chmod +x get-tilix
 ./get-tilix
 ```
-
-### Option 2: Download the script directly
-
-Download the script, move it to your home directory, make it executable, and run it:
-
-```sh
-wget https://github.com/howtoedittv/tilix-gentoo/releases/download/release/get-tilix
-mv get-tilix ~
-cd ~
-chmod +x get-tilix
-./get-tilix
-```
-
-### Option 3: Manual installation (advanced)
+### Option 2: Manual installation (advanced)
 
 This option documents the full manual process for installing Tilix on Gentoo without the helper script.
 
