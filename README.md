@@ -109,9 +109,10 @@ cp tilix.png /pic
 ```
 also if you're like me and you use lxqt and you want to set it as the default terminal do this
 
+```sh
 sudo emerge -C qterminal
 sudo ln -s /usr/bin/tilix /usr/bin/qterminal
-
+```
 ---
 
 
