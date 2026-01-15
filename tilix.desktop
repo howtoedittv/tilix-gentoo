@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Tilix
+Comment=Launch Tilix Terminal
+Exec=/usr/bin/tilix
+Icon=/pic/tilix.png
+Terminal=false
+Type=Application
+Categories=Utility;TerminalEmulator;
+StartupNotify=true
