@@ -1,0 +1,40 @@
+sudo emerge -aq dev-vcs/git wget app-eselect/eselect-repository
+
+sudo eselect repository enable dlang
+sudo emerge --sync dlang
+
+echo "dev-lang/dmd ~amd64" | sudo tee -a /etc/portage/package.accept_keywords/dmd
+
+echo "app-eselect/eselect-dlang ~amd64" | sudo tee -a /etc/portage/package.accept_keywords/eselect-dlang 
+
+sudo emerge -aq x11-libs/vte:2.91 dmd
+
+cd ~
+
+wget https://github.com/dlang/dub/releases/download/v1.40.0/dub-v1.40.0-linux-x86_64.tar.gz
+
+tar -xvf ~/dub-v1.40.0-linux-x86_64.tar.gz
+
+sudo mv ~/dub /usr/bin
+
+sudo chmod +x /usr/bin/dub
+
+
+cd ~
+
+git clone https://github.com/gnunn1/tilix.git
+
+cd tilix
+
+dub build --build=release
+
+sleep 3
+
+sudo ./install.sh
+
+sleep 5
+
+sudo mv ~/tilix/tilix /usr/bin/
+
+echo "done you can hopefully now run tilix now but typing in 'tilix' in the terminal"
+
