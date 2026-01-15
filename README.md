@@ -39,7 +39,10 @@ chmod +x get-tilix
 ```
 note: if you're like me and you use lxqt and you want to set it as the default terminal do this
 
-sudo emerge -C qterminal && sudo ln -s /usr/bin/tilix /usr/bin/qterminal
+```sh
+sudo emerge -C qterminal
+sudo ln -s /usr/bin/tilix /usr/bin/qterminal
+```
 
 ### Option 2: Manual installation (advanced)
 
@@ -95,6 +98,7 @@ https://github.com/howtoedittv/tilix-gentoo/releases/tag/release
 
 just make sure that if you want it to show up with the icon you have to do these comends first:
 
+```sh
 sudo chmod +x tilix.desktop
 sudo mkdir -p /usr/share/applications 
 sudo cp tilix.desktop /usr/share/applications/
@@ -102,7 +106,7 @@ sudo mkdir /pic
 sudo chown -R $USER:$USER /pic
 sudo chmod -R 777 /pic
 cp tilix.png /pic
-
+```
 also if you're like me and you use lxqt and you want to set it as the default terminal do this
 
 sudo emerge -C qterminal
