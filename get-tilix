@@ -1,3 +1,10 @@
+sudo mkdir -p /usr/share/applications 
+sudo cp tilix.desktop /usr/share/applications/
+sudo mkdir /pic
+sudo chown -R $USER:$USER /pic
+sudo chmod -R 777 /pic
+cp tilix.png /pic
+
 sudo emerge -q dev-vcs/git wget app-eselect/eselect-repository
 
 sudo eselect repository enable dlang
@@ -37,6 +44,8 @@ sudo ./install.sh
 sleep 5
 
 sudo mv ~/tilix/tilix /usr/bin/
+
+
 
 echo "done you can hopefully now run tilix now but typing in 'tilix' in the terminal"
 
