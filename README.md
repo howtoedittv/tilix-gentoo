@@ -21,6 +21,8 @@ Tilix installer script for Gentoo Linux
 - Root or sudo access
 - Internet connection
 
+## Note
+in case there's a problem with the script try the manual way!
 ---
 
 ## Installation
