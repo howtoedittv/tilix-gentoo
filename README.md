@@ -92,7 +92,7 @@ dub build --build=release
 sudo ./install.sh
 sudo mv ~/tilix/tilix /usr/bin/
 ```
-note: if you want i have a premade .desktop file and i foud a good icon for it you could get them here:
+note: if you want i have a premade .desktop file and i found a good icon for it you could get them here:
 
 https://github.com/howtoedittv/tilix-gentoo/releases/tag/release
 
