@@ -88,8 +88,8 @@ cd ~
 wget https://github.com/dlang/dub/releases/download/v1.40.0/dub-v1.40.0-linux-x86_64.tar.gz
 tar -xvf ~/dub-v1.40.0-linux-x86_64.tar.gz
 rm ~/dub-v1.40.0-linux-x86_64.tar.gz
+chmod +x ~/dub
 sudo mv ~/dub /usr/bin
-sudo chmod +x /usr/bin/dub
 ```
 
 Build and install Tilix:
@@ -99,9 +99,7 @@ cd ~
 git clone https://github.com/gnunn1/tilix.git
 cd tilix
 dub build --build=release
-sleep 3
 sudo ./install.sh
-sleep 5
 sudo mv ~/tilix/tilix /usr/bin/
 ```
 ---
@@ -114,21 +112,6 @@ After installation, launch Tilix by running:
 ```sh
 tilix
 ```
-
-You can also set Tilix as your default terminal in your desktop environment if desired.
-
----
-
-## Supported Systems
-
-- Gentoo Linux only
-
----
-
-## Purpose
-
-tilix-gentoo exists to provide a fast and repeatable way to install Tilix on Gentoo Linux.
-
 ---
 
 ## License
