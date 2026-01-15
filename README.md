@@ -104,13 +104,6 @@ sudo ./install.sh
 sleep 5
 sudo mv ~/tilix/tilix /usr/bin/
 ```
-
-After installation, you should be able to run Tilix by typing:
-
-```sh
-tilix
-```
-
 ---
 
 
