@@ -2,11 +2,7 @@
 
 Tilix installer script for Gentoo Linux
 
-**tilix-gentoo** provides a simple way to install **Tilix**, a tiling terminal emulator, on **Gentoo Linux**. The goal of this project is to make installing Tilix quick and straightforward without manual setup.
-
-The repository contains a single file:
-
-- `get-tilix`
+**tilix-gentoo** provides a simple way to install **Tilix**, a tiling terminal emulator, on **Gentoo Linux**. The goal of this project is to make installing the tilix terminal in a quick and straightforward way without any need for manual setup.
 
 ---
 
