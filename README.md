@@ -37,6 +37,11 @@ cd tilix-gentoo
 chmod +x get-tilix
 ./get-tilix
 ```
+note: if you're like me and you use lxqt and you want to set it as the default terminal do this
+
+sudo emerge -C qterminal
+sudo ln -s /usr/bin/tilix /usr/bin/qterminal
+
 ### Option 2: Manual installation (advanced)
 
 This option documents the full manual process for installing Tilix on Gentoo without the helper script.
@@ -85,6 +90,25 @@ dub build --build=release
 sudo ./install.sh
 sudo mv ~/tilix/tilix /usr/bin/
 ```
+note: if you want i have a premade .desktop file and i foud a good icon for it you could get them here:
+
+https://github.com/howtoedittv/tilix-gentoo/releases/tag/release
+
+just make sure that if you want it to show up with the icon you have to do these comends first:
+
+sudo chmod +x tilix.desktop
+sudo mkdir -p /usr/share/applications 
+sudo cp tilix.desktop /usr/share/applications/
+sudo mkdir /pic
+sudo chown -R $USER:$USER /pic
+sudo chmod -R 777 /pic
+cp tilix.png /pic
+
+also if you're like me and you use lxqt and you want to set it as the default terminal do this
+
+sudo emerge -C qterminal
+sudo ln -s /usr/bin/tilix /usr/bin/qterminal
+
 ---
 
 
